@@ -543,7 +543,7 @@ hr.hr1 {
     float: left;
     width: 100%;
     border-radius: 0;
-    border: solid #ccc 1px;
+    border: solid #5dbb4f 1px;
     padding: 8px 15px;
     font-weight: 400;
     font-size: 13px;
@@ -575,7 +575,7 @@ hr.hr1 {
     border: none;
     margin-top: 15px;
     margin-bottom: 5px;
-    color: #fff;
+    color: #5dbb4f;
     padding: 8px 30px;
     border-radius: 50px;
     transition: ease all 1s;
@@ -760,7 +760,7 @@ body.clinic_version .footer .widget-title h3 {
 #submitButton {
     padding: 15px 30px;
     background: linear-gradient(to right, #a6d164 0%, 5dbc4f 100%);
-    color: #fff;
+    color: #a6d164;
     border-radius: 50px;
     margin-top: 10px;
 	transition:ease all 1s;

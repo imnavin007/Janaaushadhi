@@ -276,12 +276,12 @@
                   <div class="appointment-form">
                      <h3>Book Appointment</h3>
                      <div class="form">
-                        <form action="connect.php" method="POST">
+                        <form action='connect.php' method="POST">
                            <fieldset>
                               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                  <div class="row">
                                     <div class="form-group">
-                                       <input type="text" id="name" placeholder="Your Name"  />
+                                       <input type="text" name='name' id="name" placeholder="Your Name" required  />
                                     </div>
                                  </div>
                               </div>
@@ -289,7 +289,7 @@
                               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                  <div class="row">
                                     <div class="form-group">
-                                       <select class="form-control" id="st">
+                                       <select class="form-control" name="service" id="service">
                                           <option>Service Type</option>
                                           <option>Ask For Medicine</option>
                                           <option>Sample Collection(LAB)</option>
@@ -301,7 +301,7 @@
                               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                  <div class="row">
                                     <div class="form-group">
-                                       <input type="text" id="medname" placeholder="Pantop"  />
+                                       <input type="text" name="medname" id="medname" placeholder="Pantop"  />
                                     </div>
                                  </div>
                               </div>
@@ -309,7 +309,7 @@
                               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                  <div class="row">
                                     <div class="form-group">
-                                       <input type="text" id="med" placeholder="Generic Name(Pantaprazole)"  />
+                                       <input type="text" name="med" id="med" placeholder="Generic Name(Pantaprazole)"  />
                                     </div>
                                  </div>
                               </div>
@@ -317,7 +317,7 @@
                               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                  <div class="row">
                                     <div class="form-group">
-                                       <input type="Phone Number" placeholder="Phone Number" id="phone" />
+                                       <input type="Phone Number" name="phone" placeholder="Phone Number" id="phone" />
                                     </div>
                                  </div>
                               </div>
@@ -357,14 +357,14 @@
                               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                  <div class="row">
                                     <div class="form-group">
-                                       <textarea rows="4" id="message" class="form-control" placeholder="Your Message..."></textarea>
+                                       <textarea rows="4" name="message" id="message" class="form-control" placeholder="Your Message..."></textarea>
                                     </div>
                                  </div>
                               </div>
                               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                  <div class="row">
                                     <div class="form-group">
-                                       <div class="center"><button type="submit">Submit</button></div>
+                                       <div class="center"><button type="submit" name="submit">Submit</button></div>
                                     </div>
                                  </div>
                               </div>

@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] =='POST' && isset($_POST['submit'])){
-    $conn=mysqli_connect('localhost','root','','jana_db') or die("Connection Failed:".mysqli_connect_error());
+    $conn=mysqli_connect('janaaushadhi.com.np','qtiasaqt_admin','@Imnavin007','qtiasaqt_db') or die("Connection Failed:".mysqli_connect_error());
     if (isset($_POST['name'])&& isset($_POST['service'])&& isset($_POST['medname'])&& isset($_POST['med'])&& isset($_POST['phone'])&& isset($_POST['message']))
     {
     $name=$_POST['name'];

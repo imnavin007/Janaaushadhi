@@ -12,24 +12,8 @@ if ($_SERVER["REQUEST_METHOD"] =='POST' && isset($_POST['submit'])){
 
     $sql = "INSERT INTO `user`(`name`, `service`, `medname`, `med`, `phone`, `message`) VALUES ('$name','$service','$medname','$med','$phone','$message')";
     $query = mysqli_query($conn,$sql);
-    if($query)
-    {
-        echo 'Entry Succesfull';
-    }
-    else{
-        echo  'Error Occured';
-    }
-    }
-}
-//get data from form  
-$name=$_POST['name'];
-$service=$_POST['service'];
-$medname=$_POST['medname'];
-$med=$_POST['med'];
-$phone=$_POST['phone'];
-$message=$_POST['message'];
 
-$to = "np4979@gmail.com";
+    $to = "np4979@gmail.com";
 $subject = "Mail From website";
 $txt ="Name = ". $name . "\r\n  Service = " . $service . "\r\n Medicine Name =" . $medname. "\r\n Generic Name =" . $med . "\r\n Contact =" . $phone. "\r\n Message =" . $message;
 $headers = "From: order@janaaushadhi.com.np" . "\r\n" .
@@ -39,4 +23,15 @@ if($email!=NULL){
 }
 //redirect
 header("Location:index.html");
+
+    if($query)
+    {
+        echo 'Entry Succesfull';
+    }
+    else{
+        echo  'Error Occured';
+    }
+    }
+}
+
 ?>

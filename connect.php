@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] =='POST' && isset($_POST['submit'])){
 
         $to = "janaaushadhipharmacy@gmail.com";
 $subject = "Order From website";
-$txt ="Name = ". $name . "\r\n  Service = " . $service . "\r\n Medicine Name =" . $medname. "\r\n Generic Name =" . $med . "\r\n Contact =" . $phone. "\r\n Message =" . $message;
+$txt ="Name = ". $name . "\r\n  Service = " . $service . "\r\n Medicine Name =" . $medname. "\r\n Lab Test =" . $med . "\r\n Contact =" . $phone. "\r\n Message =" . $message;
 $headers = "From: order@janaaushadhi.com.np" . "\r\n" .
 "CC: bhattaraijyoti1997@gmail.com";
 if($name!=NULL){

@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] =='POST' && isset($_POST['submit'])){
     $sql = "INSERT INTO `user`(`name`, `service`, `medname`, `med`, `phone`, `message`) VALUES ('$name','$service','$medname','$med','$phone','$message')";
     $query = mysqli_query($conn,$sql);
 
-        $to = "np4979@gmail.com";"bishnunub@gmail.com";"bhattaraijyoti1997@gmail.com";
+        $to = "janaaushadhipharmacy@gmail.com";
 $subject = "Order From website";
 $txt ="Name = ". $name . "\r\n  Service = " . $service . "\r\n Medicine Name =" . $medname. "\r\n Generic Name =" . $med . "\r\n Contact =" . $phone. "\r\n Message =" . $message;
 $headers = "From: order@janaaushadhi.com.np" . "\r\n" .

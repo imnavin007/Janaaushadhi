@@ -21,4 +21,22 @@ if ($_SERVER["REQUEST_METHOD"] =='POST' && isset($_POST['submit'])){
     }
     }
 }
+//get data from form  
+$name=$_POST['name'];
+$service=$_POST['service'];
+$medname=$_POST['medname'];
+$med=$_POST['med'];
+$phone=$_POST['phone'];
+$message=$_POST['message'];
+
+$to = "np4979@gmail.com";
+$subject = "Mail From website";
+$txt ="Name = ". $name . "\r\n  Service = " . $service . "\r\n Medicine Name =" . $medname. "\r\n Generic Name =" . $med . "\r\n Contact =" . $phone. "\r\n Message =" . $message;
+$headers = "From: order@janaaushadhi.com.np" . "\r\n" .
+"CC: bhattaraijyoti1997@gmail.com";
+if($email!=NULL){
+    mail($to,$subject,$txt,$headers);
+}
+//redirect
+header("Location:thankyou.html");
 ?>
